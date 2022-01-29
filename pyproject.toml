@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "basilisk"
+version = "0.1.0"
+description = "A mythical service only a true developer can defeat"
+authors = ["Vivaan Verma <hello@vivaanverma.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.73.0"
+uvicorn = "^0.17.1"
+strawberry-graphql = "^0.95.1"
+websockets = "^10.1"
+
+[tool.poetry.dev-dependencies]
+taskipy = "^1.9.0"
+black = "^22.1.0"
+pytest = "^6.2.5"
+
+[tool.taskipy.tasks]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
